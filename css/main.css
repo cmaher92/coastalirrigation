@@ -66,13 +66,13 @@ layout elements
 .tinted-sections {
   position: relative;
   display: block;
-  background-color: #DEDEDE;
+  background-color: #f5f5f5;
 }
 
 .white-sections {
   display: block;
   position: relative;
-  background-color: #FFF;
+  background-color: #f5f5f5;
 }
 
 .page-footers {
@@ -82,103 +82,141 @@ layout elements
 .inner {
   display: flex;
   justify-content: center;
-
 }
 
 .button-container {
   align-self: center;
 }
 
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 /*
 Fonts
 */
 
-
-.h1-white {
-  color: #636363;
-  font-weight: normal;
-  font-family: 'PT Serif', serif;
-  font-size: 28px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.h1-tinted {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #565A5C;
+  font-size: 26px;
 }
 
-.p-white {
-  font-family: 'PT Serif', serif;
-  color: #646464;
-  font-size: 19px;
+.p-tinted {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #565A5C;
+  font-size: 18px;
+  margin-top: 1px;
+  /*word-spacing: 3px;*/
 }
 
-.button-white {
+.icon-description {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 20px;
+}
+
+.p-footer {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
+  -moz-border-radius: 3;
+  border-radius: 4px;
   color: #ffffff;
   font-size: 20px;
   background: #002a4e;
   padding: 10px 20px 10px 20px;
+  text-align: center;
   text-decoration: none;
+  cursor: pointer;
   border: none;
+  margin: 5px;
+  border-bottom: 2px solid #002a4e;
 }
 
-.h1-tinted {
-  font-family: 'PT Serif', serif;
-  color: #00284a;
-  font-size: 40px;
-  margin-bottom: 10px;
-  text-align: center;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.p-tinted {
-font-family: 'PT Serif', serif;
-color: #00284a;
-font-size: 20px;
-margin-top: 10px;
-margin-bottom: 10px;
-text-align: center;
+.button:hover {
+  background: #035ca5;
 }
 
-/*h3 {
-  text-align: center;
-}*/
-
-/*
-Navigation Bar
-*/
+/* Navigation Bar */
+.main-wrapper {
+  box-sizing: border-box;
+}
 
 .nav {
+  display: block;
   background-color: #FFF;
-  height: 80px;
-  box-shadow: 10px 10px 5px grey;
+  height: auto;
+  /*min-height: 80px;*/
+  /*box-shadow: 10px 10px 5px grey;*/
 }
 
-.logo-container {
-  display: block;
-  justify-content: flex-start;
-  margin-left: 150px;
+.logo-container{
+  width: 25%;
+  padding-left: 80px;
   float: left;
-  margin-top: 10px;
+}
+
+.nav-items-container{
+  width: 75%;
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 80px;
+  height: 92px;
 }
 
 .coastal-logo {
-  justify-content: flex-start;
-}
-
-.nav-items-container {
-  margin-right: 130px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
-  padding-top: 40px;
+  width: 25%
+  padding-left: 80px;
+  float: left;
+  max-width: 130px;
+  max-height: 120px;
 }
 
 .nav-item {
-  margin-right: 20px;
-  font-family: 'PT Serif', serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: 400;
   color: black;
   text-decoration: none;
+
+  margin-left: 20px;
+}
+
+.nav-item:hover {
+
 }
 
 /*
@@ -195,7 +233,7 @@ Hero Section
   height: 500px;
 }
 
-.hero .inner {
+.caption-container {
   display: flex;
   justify-content: center;
 }
@@ -203,101 +241,134 @@ Hero Section
 .caption {
   padding-top: 150px;
   width: 300px;
-}
-/*
-Introduction
-*/
-
-.introduction-header {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  height: 400px;
 }
 
-.introduction-paragraph {
-  margin-bottom: 30px;
-}
+/* Introduction */
 
-.about-container {
+.intro-container {
   display: flex;
   flex-direction: column;
-  width: 600px;
-  /*margin: 90px 90px;*/
+  max-width: 600px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.about-content {
+.intro-content {
+  padding-top: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.button-container {
-  margin-bottom: 50px;
+.header-container {
+  text-align: center;
 }
 
-/*
-Statistics
-*/
+.p-intro {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.p-signature {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: left;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.signature {
+  margin-top: 5px;
+}
+
+.button-container {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Statistics */
 
 .statistics-header {
+  text-align: center;
   margin-top: 40px;
+  padding-bottom: 40px;
+  font-size: 28px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 
-.icon-description {
-  margin-top: 20px;
-}
-
-.statistics {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 40px;
+.p-why {
+  display: block;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
 }
 
 .statistics-container {
-  max-width: 200px;
-  min-width: 200px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  flex-wrap: no-wrap;
-  /*display: inline-block;*/
-  /*justify-content: space-around;*/
-
 }
 
-.logos{
-  padding-top: 40px;
+/* Recent Work */
+
+.recent-content-container {
+  display: block;
   padding-bottom: 40px;
-  /*margin: auto;*/
-  /*display: flex;
-  justify-content: space-around;*/
 }
 
-.logo{
-    height: 100px;
-    width: 80px;
-    margin: auto;
+.recent-description-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
 
-  }
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.recent-image {
+  display: block;
+  margin: auto;
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.image-description {
+  font-family: Arial, 'Helvetica', sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 26px;
+  left: 0%;
+  top: 50%;
+  width: 100%;
+}
+
+.history-image:hover {
+}
 
 /*
 Notable Customers
 */
 
-
-.customer-logo-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-}
-
 .customer-logo {
+  /*display: block;*/
+  margin: auto;
+  margin-bottom: 40px;
   max-width: 50px;
   max-height: 50px;
-  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  /*margin-bottom: 50px;*/
 }
 
 .customer-header-container {
-  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
 }
@@ -309,10 +380,19 @@ Footer
 .page-footers {
   display: block;
   background-color: #00284a;
+  text-align: center;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: flex-start;
-  height: 300px;
+  height: 180px;
+  padding-top: 80px;
+}
+
+.footer-text {
+  margin-top: 2px;
+}
+
+.line {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
