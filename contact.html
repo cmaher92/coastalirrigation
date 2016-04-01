@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Coastal Irrigation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        function initialize() {
+          var cotuit=new google.maps.LatLng(41.700321,-70.300202);
+          var mapProp = {
+            center:cotuit,
+            scrollwheel: false,
+            zoom:10,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          var myCity = new google.maps.Circle({
+            center:cotuit,
+            radius:31000,
+            strokeColor:"##00284a",
+            strokeOpacity:0.8,
+            strokeWeight:1,
+            fillColor:"##00284a",
+            fillOpacity:0.4
+            });
+
+          myCity.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+
+    <div class="main-wrapper">
+    <body>
+
+
+<!-- navigation-bar -->
+<div class="row">
+<nav class="nav">
+
+  <div class="col-3 logo-container">
+  <img class="coastal-logo" src="assets/logo.png" alt="coastal-irrigation logo" width="140">
+  </div>
+
+  <div class="col-9 nav-items-container">
+  <a class="nav-item" href="/irrigation/">Irrigation</a>
+  <a class="nav-item" href="/lighting/">Lighting</a>
+  <a class="nav-item" href="/contact/">Contact</a>
+  </div>
+
+</nav>
+</div>
+
+
+<!-- Contact -->
+<section class="tinted-sections">
+    <div class="contact-container">
+        <p class="h1-tinted">Contact Information</p>
+        <p class="p-tinted">508-428-0478</p>
+        <p class="p-tinted">P.O. Box 263</p>
+        <p class="p-tinted">Cotuit, MA</p>
+      </div>
+    </div>
+</section>
+
+<!-- Map -->
+<section class="tinted-sections">
+  <div class="inner">
+    <div class="map-container">
+    <div class="map-title">
+      <p class="h1-tinted">Here's where we work</p>
+    </div>
+      <div id="googleMap" style="width:1000px;height:380px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Work -->
+<section class="tinted-sections">
+  <div class="recent-content-container">
+
+    <div class="recent-description-container">
+    <h1 class="h1-tinted">Recent Work</h1>
+    </div>
+<div class="inner">
+  <div class="row">
+    <div class="container col-4">
+      <img src="assets/irrigation.jpg" alt="irrigation job example" class="recent-image">
+    <h3 class="image-description">Chatham</h3>
+    </div>
+    <div class="container col-4">
+    <img src="assets/lighting.jpg" alt="lighting job example" class="recent-image">
+    <h3 class="image-description">Osterville</h3>
+    </div>
+    <div class="container col-4">
+    <img src="assets/cotuit.jpg" alt="maintenance job example" class="recent-image">
+    <h3 class="image-description">Cotuit</h3>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- page-footers -->
+<footer class="page-footers">
+    <div class="footer-container">
+      <p class="p-footer footer-text">P.O. Box 263</p>
+      <p class="p-footer footer-text">Cotuit, MA 02635</p>
+      <p class="p-footer footer-text">info@coastalirrigation.net</p>
+      <p class="p-footer footer-text">Copyright © 2016 Coastal Irrigation, Inc. All rights reserved</p>
+    </div>
+
+</footer>
+</div>
+
+
+</body>
+</html>
