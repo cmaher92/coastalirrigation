@@ -86,7 +86,9 @@ layout elements
 }
 
 .button-container {
-  align-self: center;
+  clear: both;
+  text-align:center;
+  margin:auto;
 }
 
 .row:after {
@@ -122,6 +124,12 @@ Fonts
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #565A5C;
   font-size: 26px;
+}
+
+.h2-tinted {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #565A5C;
+  font-size: 22px;
 }
 
 .p-tinted {
@@ -290,13 +298,6 @@ Hero Section
   margin-top: 5px;
 }
 
-.button-container {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-
-
 /* Statistics */
 
 .statistics-header {
@@ -324,6 +325,7 @@ Hero Section
 
 .recent-content-container {
   display: block;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -463,6 +465,26 @@ why
   width: 655px;
   height: 435px;
 }
+
+/*
+Annual Service Plan
+*/
+.anual-service-container {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.service-container {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.agreement-image {
+  height: 100px;
+  width: 100px;
+}
+
 
 /*
 Footer
