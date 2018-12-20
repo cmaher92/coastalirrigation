@@ -249,7 +249,7 @@ Hero Section
 }
 
 .p-intro {
-  font-size: 2em;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 480px) {
@@ -263,7 +263,7 @@ Hero Section
   }
 
   .p-intro {
-    font-size: 2em;
+    font-size: 1em;
   }
 
 }
