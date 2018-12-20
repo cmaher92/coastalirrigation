@@ -83,7 +83,7 @@ layout elements
 
 .button-container {
   clear: both;
-  text-align:center;
+  text-align: center;
   margin:auto;
 }
 
@@ -99,77 +99,52 @@ layout elements
     /*border: 1px solid red;*/
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 /*
 Fonts
 */
 
 .h1-tinted {
-  /* font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; */
-  color: rgb(30, 50, 60);
+  font-family: 'Lora', serif;
+  color: #202121;
   font-size: 26px;
 }
 
+.h1-form {
+  font-size: 20px;
+  color: #212323;
+}
+
 .h2-tinted {
-  color: rgb(30, 50, 60);
+  font-family: 'Lora', serif;
+  color: #202121;
   font-size: 22px;
 }
 
 .p-tinted {
-  color: rgb(30, 50, 60);
+  font-family: 'Lora', serif;
+  color: #202121;
   font-size: 18px;
 }
 
+.p-regular {
+  font-family: 'Lora', serif;
+  color: #202121;
+}
+
+.p-form {
+  font-size: 11px;
+  color: #212323;
+}
+
 .icon-description {
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-font-size: 20px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
 }
 
 .p-footer {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
   color: #fff;
-}
-
-.button {
-  display: inline-block;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  -webkit-border-radius: 6;
-  -moz-border-radius: 3;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 20px;
-  background: #002a4e;
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  margin: 5px;
-  border-bottom: 2px solid #002a4e;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button:hover {
-  background: #035ca5;
 }
 
 /* Navigation Bar */
@@ -313,11 +288,6 @@ Hero Section
   background-color: #f5f5f5;
 }
 
-.h2-tinted {
-    font-size: 26px;
-    color: black;
-  }
-
 .tinted-title {
     padding-top: 20px;
     display: flex;
@@ -440,10 +410,92 @@ Notable Customers
 Contact
 */
 
-.contact-container {
-  padding-top: 20px;
-  padding-bottom: 15px;
+.form-container {
+  padding: 40px 45px 40px 45px;
+}
+
+.text-form {
   text-align: center;
+  margin-bottom: 35px;
+}
+
+.text-form p {
+  margin-top: 5px;
+}
+
+.text-input {
+  margin-bottom: 15px;
+}
+
+.text-input input {
+  margin-top: 4px;
+
+  height: 25px;
+  width: 100%;
+
+  border-color: #E2E2E2;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
+}
+
+.dropdown {
+  margin-top: 4px;
+  margin-bottom: 15px;
+
+  height: 25px;
+  width: 100%;
+
+  background-color: white;
+
+  border-color: #E2E2E2;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
+
+  font-family: "lora", serif;
+  font-size: 11px;
+  color: RGB(33, 35, 35, 50);
+}
+
+.comment {
+  margin-top: 4px;
+  font-family: "lora", serif;
+  font-size: 11px;
+  color: RGB(33, 35, 35, 50);
+
+  width: 100%;
+  height: 100px;
+
+  border-color: #E2E2E2;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
+}
+
+.button {
+  margin-top: 20px;
+  display: flex;
+  float: right;
+  background-color: #007744;
+  height: 28px;
+  width: 105px;
+
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-radius: 4px;
+  border-color: #0c4e32;
+}
+
+.button-content {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "lora", serif;
+  color: white;
+  background-color: RGB(0, 0, 0, 0);
+  border: 0;
 }
 
 /*
@@ -493,11 +545,6 @@ why
   max-width: 350px;
 }
 
-.p-tinted {
-  color: rgb(30, 50, 60);
-  font-size: 18px;
-}
-
 @media screen and (min-width: 750px) {
   .why-container {
     padding: 0px;
@@ -535,11 +582,6 @@ why
 /*
 Annual Service Plan
 */
-.anual-service-container {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 25px;
-}
 
 .service-container {
   text-align: center;
@@ -551,6 +593,48 @@ Annual Service Plan
   width: 100px;
 }
 
+/* Annual Service Plan */
+.annual-service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.info-containter p {
+  margin-top: 8px;
+}
+
+.container {
+}
+
+.plan-big-container {
+  display: flex;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: white;
+  height: 400px;
+  width: 300px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+.plan-container h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: center;
+}
 
 /*
 Footer
