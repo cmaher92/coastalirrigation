@@ -110,7 +110,8 @@ Fonts
 }
 
 .h1-form {
-  font-size: 20px;
+  margin-bottom: 8px;
+  font-size: 24px;
   color: #212323;
 }
 
@@ -132,7 +133,8 @@ Fonts
 }
 
 .p-form {
-  font-size: 11px;
+  line-height: 22px;
+  font-size: 14px;
   color: #212323;
 }
 
@@ -411,7 +413,7 @@ Contact
 */
 
 .form-container {
-  padding: 40px 45px 40px 45px;
+  padding: 80px 45px 40px 45px;
 }
 
 .text-form {
@@ -419,16 +421,12 @@ Contact
   margin-bottom: 35px;
 }
 
-.text-form p {
-  margin-top: 5px;
-}
-
 .text-input {
   margin-bottom: 15px;
 }
 
 .text-input input {
-  margin-top: 4px;
+  /* margin-top: 4px; */
 
   height: 25px;
   width: 100%;
@@ -494,7 +492,7 @@ Contact
 
   font-family: "lora", serif;
   color: white;
-  background-color: RGB(0, 0, 0, 0);
+  background-color: unset;
   border: 0;
 }
 
