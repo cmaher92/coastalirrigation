@@ -666,6 +666,7 @@ Footer
   flex-direction: column;
   justify-content: center;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer-content h1 {
@@ -689,7 +690,6 @@ Footer
 }
 
 .copyright {
-  position: relative;
   /* background: yellow; */
   top: 30px;
   text-align: center;
