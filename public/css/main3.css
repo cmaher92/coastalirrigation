@@ -149,6 +149,18 @@ Fonts
   color: #fff;
 }
 
+.footer h1 {
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  color: #fff;
+}
+
+.footer p {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #BFBFBF;
+}
+
 /* Navigation Bar */
 .main-wrapper {
   box-sizing: border-box;
@@ -638,18 +650,49 @@ Annual Service Plan
 Footer
 */
 
+/* once new footer implemented delete this */
 .page-footers {
-  display: block;
   background-color: #00284a;
+}
+
+.footer {
+  height: 200px;
+  background-color: #00284a;
+}
+
+.footer-content {
+  /* padding-left: 38px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.footer-content h1 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.footer-content p {
+  text-align: center;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #BFBFBF;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  position: relative;
+  /* background: yellow; */
+  top: 30px;
   text-align: center;
 }
 
-.footer-container {
-  clear: both;
-  height: 200px;
-  padding-top: 80px;
-}
-
-.footer-text {
-  margin-top: 2px;
-}
+/*  */
