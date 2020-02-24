@@ -265,6 +265,7 @@ Hero Section
 @media only screen and (max-width: 768px) {
   /* Only visible up to 768px */
   .sticky-contact {
+    display: block;
     height: 60px;
     background-color: rgba(74, 74, 74, 0.9);
     position: fixed;
@@ -279,6 +280,7 @@ Hero Section
   }
 
   .sticky-contact a {
+    display: block;
     padding-top: 10px;
     text-decoration: none;
     color: white;
@@ -287,6 +289,7 @@ Hero Section
   }
 
   .sticky-contact span {
+    display: inline;
     padding-top: 5px;
     color: #b1b1b1;
     line-height: 1;
