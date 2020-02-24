@@ -69,6 +69,8 @@ layout elements
 
 .white-sections {
   background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
 
 .page-footers {
@@ -302,7 +304,7 @@ Hero Section
 /* Introduction */
 
 .intro-container {
-  height: 350px;
+  height: 250px;
   padding-left: 30px;
   padding-right: 20px;
   display: flex;
@@ -315,15 +317,9 @@ Hero Section
   padding-bottom: 20px;
 }
 
-.p-intro {
-  font-size: 18px;
-  /* text-align: center; */
-}
-
-
 @media screen and (min-width: 480px) {
     .intro-container {
-      height: 200px;
+      height: 250px;
       padding-bottom: 20px;
     }
 
@@ -335,109 +331,11 @@ Hero Section
     }
 }
 
-/* Recent Work */
-
-/* Recent work - mobile */
-
-.tinted {
-  background-color: #f5f5f5;
+/* Reviews */
+.reviews-container {
+  width: 700px;
+  text-align: center;
 }
-
-.tinted-title {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-.recent-work-container {
-  height: 800px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.recent-work-container div:nth-child(2) {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.recent-work-image {
-    height: 250px;
-    width: 250px;
-    background-repeat: no-repeat;
-  }
-
-.recent-work-container .irrigation {
-  background-image: url("../assets/irrigation.jpg");
-}
-
-.recent-work-container .lighting {
-  background-image: url("../assets/lighting.jpg");
-}
-
-.recent-work-container .wianno {
-  background-image: url("../assets/lowell.jpg");
-  background-position: center;
-}
-
-.recent-work-caption {
-  font-size: 2em;
-  color: #fff;
-}
-
-.recent-work-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Recent work - screens 480-1050 */
-@media screen and (min-width: 715px) {
-  .recent-work-image {
-    height: 250px;
-    width: 250px;
-  }
-
-  .recent-work-container {
-  height: 400px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  }
-
-  .recent-work-container div:nth-child(2) {
-    margin: 0 10px 0 10px;
-  }
-}
-
-/* Recent work - desktop */
-@media screen and (min-width: 1050px) {
-  .tinted {
-    height: 450px;
-  }
-
-  .recent-work-container {
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-      flex-direction: row;
-  }
-
-  .recent-work-container div:nth-child(2) {
-    margin: 0 10px 0 10px;
-  }
-
-  .recent-work-image {
-    height: 300px;
-    width: 300px;
-  }
-
-}
-
 
 /*
 Notable Customers
