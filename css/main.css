@@ -249,6 +249,19 @@ Hero Section
 }
 
 /* Contact Bar */
+.sticky-contact {
+  display: none;
+}
+
+.sticky-contact a {
+  display: none;
+}
+
+.sticky-contact span {
+  display: none;
+}
+
+
 @media only screen and (max-width: 768px) {
   /* Only visible up to 768px */
   .sticky-contact {
