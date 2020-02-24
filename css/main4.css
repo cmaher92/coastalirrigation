@@ -125,6 +125,8 @@ Fonts
   font-family: 'Lora', serif;
   color: #202121;
   font-size: 18px;
+
+
 }
 
 .p-regular {
@@ -250,7 +252,7 @@ Hero Section
 
 .intro-container {
   height: 350px;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 20px;
   display: flex;
   flex-direction: column;
@@ -264,33 +266,21 @@ Hero Section
 
 .p-intro {
   font-size: 18px;
+  /* text-align: center; */
 }
 
-@media screen and (min-width: 480px) {
-
-  .intro-container {
-    height: 300px;
-  }
-
-  .intro-header {
-    padding-bottom: 20px;
-  }
-
-  .p-intro {
-    font-size: 1em;
-  }
-
-}
 
 @media screen and (min-width: 480px) {
-    .into-container {
+    .intro-container {
       height: 200px;
+      padding-bottom: 20px;
     }
 
     .p-intro {
       margin-left: auto;
       margin-right: auto;
-      max-width: 600px;
+      max-width: 500px;
+      font-size: 1em;
     }
 }
 
@@ -552,7 +542,9 @@ why
 
 .content-container p {
   margin-top: 10px;
-  max-width: 350px;
+  max-width: 300px;
+  padding-left: 20px;
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 750px) {
@@ -578,7 +570,7 @@ why
   }
 
   .text-container {
-    padding-left: 30px;
+    /* padding-left: 30px; */
     display: flex;
     flex-direction: column;
   }
