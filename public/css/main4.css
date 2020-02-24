@@ -249,38 +249,16 @@ Hero Section
 }
 
 /* Contact Bar */
-@media only screen and (max-width: 768px) {
-  /* Only visible up to 768px */
-  .sticky-contact {
-    height: 60px;
-    background-color: rgba(74, 74, 74, 0.9);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-  }
-
-  .sticky-contact a {
-    padding-top: 10px;
-    text-decoration: none;
-    color: white;
-    width: 50%;
-    text-align: center;
-  }
-
-  .sticky-contact span {
-    padding-top: 5px;
-    color: #b1b1b1;
-    line-height: 1;
-    display: block;
-    font-size: 0.56em;
-    font-family: 'Lora', serif;
-  }
+/* @media only screen and (max-width: 768px) {
+} */
+.sticky-contact {
+  height: 60px;
+  background-color: rgba(74, 74, 74, 0.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Introduction */
@@ -685,12 +663,6 @@ Footer
 .footer {
   height: 200px;
   background-color: #00284a;
-}
-
-@media only screen and (max-width: 768px) {
-  .footer {
-    height: 260px;
-  }
 }
 
 .footer-content {
